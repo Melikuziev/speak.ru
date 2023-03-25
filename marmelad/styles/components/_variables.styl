@@ -1,0 +1,44 @@
+$system-font = unquote('-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"')
+
+$colors = {
+  theme: #6fbc95,
+  accent: #BC6F96,
+}
+
+$fonts = {
+  base: $system-font,
+  headings: $system-font
+}
+
+$body = {
+  fontFamily: $fonts.base,
+  fontSize: 1rem,
+  fontWeight: 400,
+  lineHeight: 1.5,
+  color: #212529,
+  bgc: #fff
+}
+
+$selection = {
+  bgc: $colors.theme,
+  color: #fff
+}
+
+$selectionHeadings = {
+  bgc: $colors.accent,
+  color: #000
+}
+
+$placeholders = {
+  normal : getColor($body.color, 'hint'),
+  focus  : transparent
+}
+
+$mq = {
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+	xxxl: 1600px,
+}
