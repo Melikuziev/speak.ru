@@ -1,5 +1,12 @@
 <header block="header">
-    <div elem="content">
-        <p>Header</p>
-    </div>
+	<div elem="content" class="container">
+		{% include 'logo.html' %}
+		{% include 'main-nav.html' %}
+		<div elem="right-content">
+			{% include 'conversation-btn.html' %}
+			{% include 'language-switcher.html' %}
+			{% include 'hamburger-menu.html' %}
+			{% include 'login-btn.html' %}
+		</div>
+	</div>
 </header><!-- header -->

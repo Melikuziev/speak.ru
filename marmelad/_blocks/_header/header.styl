@@ -1,7 +1,39 @@
 .header
 	flex none
 
-@media (min-width: $mq.sm)
+	&__content
+		display flex
+		align-items center
+		justify-content space-between
+		padding-top 12px
+		padding-bottom 12px
+
+	&__right-content
+		display flex
+		align-items center
+
+@media (min-width: $mq.md)
 	.header
-		p
-			font-size 50px
+		&__content
+			padding-top 20px
+			padding-bottom 20px
+
+		&__right-content
+			gap 10px
+
+@media (min-width: $mq.lg)
+	.header
+		&__content
+			padding-top 25px
+			padding-bottom 25px
+
+.container
+	padding-left 20px
+	padding-right 20px
+	margin 0 auto
+	max-width 1120px
+
+@media (min-width: $mq.md)
+	.container
+		padding-left 40px
+		padding-right 40px

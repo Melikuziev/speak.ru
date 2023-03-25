@@ -1,0 +1,29 @@
+.language-switcher
+	display flex
+	align-items center
+	gap 6px
+	padding 10px
+	margin -10px 0
+
+	&__flag
+		width 100%
+		max-width 20px
+
+	&__text
+		font-weight 500
+		font-size 18px
+		line-height 1.1
+		color #333
+
+	&__text,
+	&__icon
+		display none
+
+@media (min-width: $mq.lg)
+	.language-switcher
+		&__flag
+			max-width 26px
+
+		&__text,
+		&__icon
+			display block
