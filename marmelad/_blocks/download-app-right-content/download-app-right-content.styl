@@ -1,0 +1,77 @@
+.download-app-right-content
+	display flex
+	flex-direction column
+
+	&__title
+		text-align center
+		margin-bottom 30px
+
+	&__middle-content
+		display flex
+		gap 15px
+		margin-bottom 40px
+
+	&__logo
+		padding 10px
+		background-color #fff
+		border-radius 12px
+		align-self center
+
+	&__text-content
+		display flex
+		flex-direction column
+
+	&__speak
+		display inline-block
+		font-weight 600
+		font-size 18px
+		line-height 140%
+		color #00B9B6
+		margin-bottom 5px
+
+	&__text
+		display inline-block
+		font-size 14px
+		line-height 140%
+		color #333
+		margin-bottom 5px
+		&:last-child
+			margin-bottom 0
+
+	&__bottom-content
+		display flex
+		gap 20px
+		align-self center
+
+	&__link
+		display inline-block
+
+	&__icon
+		border-radius 8px
+		vertical-align top
+
+@media (min-width: $mq.md)
+	.download-app-right-content
+		&__title
+			text-align left
+
+@media (min-width: $mq.lg)
+	.download-app-right-content
+		&__title
+			margin-bottom 30px
+
+		&__middle-content
+			margin-bottom 60px
+			gap 20px
+
+		&__logo
+			padding 14px
+
+		&__speak
+			font-size 20px
+
+		&__text
+			font-size 16px
+
+		&__bottom-content
+			align-self start

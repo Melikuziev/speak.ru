@@ -1,0 +1,26 @@
+.video-content
+	position relative
+	margin-bottom 30px
+
+	&__img
+		vertical-align top
+		border-radius 24px
+
+	&__play-icon
+		vertical-align top
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+
+@media (min-width: $mq.md)
+	.video-content
+		width 100%
+		max-width 450px
+		align-self center
+		margin-bottom 51px
+
+@media (min-width: $mq.lg)
+	.video-content
+		max-width 615px
+		margin-bottom 0
