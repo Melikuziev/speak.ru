@@ -1,0 +1,53 @@
+.current-topics-text
+	margin-bottom 30px
+
+	&__title
+		margin 0
+		text-align center
+
+	&__list
+		list-style none
+		margin 30px 0 0 0
+		padding 0
+		display flex
+		flex-wrap wrap
+		gap 15px
+		justify-content center
+
+	&__link
+		display inline-block
+		font-size 14px
+		line-height 120%
+		text-decoration none
+		color #000
+		padding 10px 30px
+		background-color #FFFFFF
+		box-shadow 0px 15px 25px rgba(0, 0, 0, 0.05)
+		border-radius 12px
+		transition color .3s
+		&:hover
+			box-shadow 0px 4px 25px rgba(0, 185, 182, 0.25)
+			color #00B9B6
+		&--active
+			color #fff
+			background linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%)
+			&:hover
+				 color #fff
+
+@media (min-width: $mq.md)
+	.current-topics-text
+		&__link
+			font-size 16px
+
+@media (min-width: $mq.lg)
+	.current-topics-text
+		&__list
+			margin 50px 0 0 0
+
+		&__link
+			font-size 18px
+
+@media (min-width: $mq.xl)
+	.current-topics-text
+		&__list
+			margin 55px 0 0 0

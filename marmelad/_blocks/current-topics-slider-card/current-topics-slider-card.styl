@@ -1,0 +1,47 @@
+.current-topics-slider-card
+	background-color #fff
+	border-radius 12px
+
+	&__content
+		padding 15px 15px 20px 15px
+		display flex
+		flex-direction column
+
+	&__img-link
+		border-radius 12px
+		overflow hidden
+		align-self center
+
+	&__img
+		img
+			width 290px
+			vertical-align top
+
+	&__name
+		text-decoration none
+		font-weight 700
+		font-size 18px
+		line-height 1.1
+		color #333
+		display inline-block
+		margin 15px 0 0 0
+		align-self start
+
+	&__bottom-content
+		margin-top 10px
+		display flex
+		justify-content space-between
+		align-items center
+		img
+			vertical-align top
+
+	&__stars
+		height 14px
+
+@media (min-width: $mq.md)
+	.current-topics-slider-card
+		&__name
+			font-size 16px
+
+		&__bottom-content
+			gap 13px
