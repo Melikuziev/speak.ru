@@ -1,6 +1,5 @@
 .current-topics-text
 	margin-bottom 30px
-
 	&__title
 		margin 0
 		text-align center
@@ -34,6 +33,12 @@
 			&:hover
 				 color #fff
 
+@media (min-width: $mq.sm)
+	.current-topics-text
+		&__title
+			br
+				display none
+
 @media (min-width: $mq.md)
 	.current-topics-text
 		&__link
@@ -41,6 +46,9 @@
 
 @media (min-width: $mq.lg)
 	.current-topics-text
+		&__title
+			font-size 32px !important
+
 		&__list
 			margin 50px 0 0 0
 

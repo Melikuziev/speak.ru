@@ -1,0 +1,66 @@
+.our-benefits
+	background-color #F9FDFF
+	padding-top 40px
+	padding-bottom 40px
+
+	&__inner
+		display flex
+		flex-direction column
+
+	&__title
+		text-align center
+		margin-bottom 30px
+
+	&__list
+		list-style none
+		margin 0 0 20px 0
+		padding 0
+
+	&__item
+		display flex
+		gap 10px
+		line-height 140%
+		color #333
+		margin-bottom 15px
+		&:last-child
+			margin 0
+
+	&__icon
+		width 20px
+		height 20px
+		flex 0 0 auto
+
+	&__right-content
+		align-self center
+
+@media (min-width: $mq.md)
+	.our-benefits
+		padding-top 50px
+		padding-bottom 50px
+
+		&__inner
+			flex-direction row
+			justify-content space-between
+
+		&__left-content
+			align-self center
+
+		&__title
+			text-align left
+
+		&__right-content
+			margin-right -28px
+
+@media (min-width: $mq.lg)
+	.our-benefits
+		&__item
+			font-size 18px
+
+@media (min-width: $mq.xl)
+	.our-benefits
+		padding-top 80px
+		padding-bottom 70px
+
+		&__title
+			font-size 36px
+			margin-bottom 40px
